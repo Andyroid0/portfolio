@@ -89,4 +89,4 @@ def contact():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(host=10.100.100.10, port=80, debug=False)

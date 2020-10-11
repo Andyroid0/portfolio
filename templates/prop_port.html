@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block prop_port %}
+
+  {% for card in cards %}
+
+            
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-lg bg-secondary ">
+            <!---->
+                <a href= "/static/assets/{{ card.img_NAME }}" ><img src="/static/assets/{{ card.img_NAME }}" class="card-img-top"></a>
+                <!---->
+            <div class="card-body">
+                <p class="card-text font-weight-bold">{{ card.DESC }}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <!---->
+                    <a role="button" href="/static/assets/{{ card.img_NAME }}" class="btn btn-sm btn-outline-dark">View</a>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+    {% endfor %}
+
+{% endblock prop_port %}

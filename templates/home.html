@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block home %}
+
+<section class="jumbotron text-center bg-dark text-white">
+    <div class="container">
+      <h1>Portfolio of Andrew Valley</h1>
+      <p class="lead text-muted">Thanks so much for visiting my portfolio page. Feel free to visit my personal(@artof_avalley) and professional (@adderstone_games) instagram pages as well as write me an email with any inquiries. </p>
+      <p>
+
+        <a href="/contact" class="btn btn-primary my-2">Contact Me!</a>
+         
+      </p>
+
+      <p>
+
+        <a href="/characters" class="btn btn-secondary my-2">Character Design</a> 
+        <a href="/creatures" class="btn btn-secondary my-2">Creature Design</a>
+        <a href="/sketchbook" class="btn btn-secondary my-2">Sketchbook Clippings</a>
+        <a href="/props" class="btn btn-secondary my-2">Prop Design</a>
+
+      </p>
+    </div>
+  </section>
+
+{% for card in cards %}
+
+            
+  <div class="col-md-4">
+      <div class="card mb-4 shadow-lg bg-secondary ">
+      <!---->
+          <a href= "/static/assets/{{ card.img_NAME }}" ><img src="/static/assets/{{ card.img_NAME }}" class="card-img-top"></a>
+          <!---->
+      <div class="card-body">
+          <p class="card-text font-weight-bold">{{ card.DESC }}</p>
+          <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+              <!---->
+              <a role="button" href="/static/assets/{{ card.img_NAME }}" class="btn btn-sm btn-outline-dark">View</a>
+      </div>
+      </div>
+  </div>
+  </div>
+  </div>
+
+
+{% endfor %}
+
+
+
+{% endblock home %}

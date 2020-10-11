@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+    {% block contact %}
+
+
+        <div class="container card mx-auto" style="width: 30rem;">
+
+              
+
+                {% with messages =  get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                                {% for category, message in messages %}
+                                        <br>
+                                        <div class="{{ category }}">{{ message }}</div>
+                                {% endfor %}         
+                        {% endif %}
+                {% endwith %}
+                        
+                        
+                
+
+                <form id="fcf-form-id" class="fcf-form-class" method="POST" action="{{ url_for('contact') }}">
+
+                                {{ form.hidden_tag() }}
+                                    <br>
+                        <div class="md-form mb-5 justify-content-center">
+                                {{ form.email(class="form-control validate container", placeholder="Your Email") }}
+                        </div>
+
+                        <div class="md-form mb-5 justify-content-center">
+                                {{ form.email2(class="form-control validate container", placeholder="Confirm you Email Address.") }}
+                        </div>
+
+                        <div class="md-form justify-content-center">
+                                {{ form.textBody(class="form-control md-textarea container", rows="4", placeholder="What's on you mind?") }}
+                        </div>
+                            
+                                    <br>
+            
+                        <div class="md-form d-flex justify-content-center">
+                                {{ form.submit(class="btn btn-primary btn-lg btn-block container") }}   
+                        </div>
+                                    <br>
+                </form> 
+
+        </div>
+       
+    {% endblock contact %}

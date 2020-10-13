@@ -18,7 +18,7 @@ Creatures_cards = [
     },
 
     {
-        'img_NAME': 'kraken_me_up.png',
+        'img_NAME': 'Kraken_me_up.png',
         'DESC': 'Older character design from a drawing prompt on instagram.'
     },
 
@@ -106,7 +106,7 @@ General_cards = [
     },
 
     {
-        'img_NAME': 'kraken_me_up.png',
+        'img_NAME': 'Kraken_me_up.png',
         'DESC': 'Older character design from a drawing prompt on instagram.'
     },
 

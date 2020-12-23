@@ -14,7 +14,7 @@ app.config['MAIL_SERVER'] = 'smtp-mail.outlook.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'andyvalley@live.com'
-app.config['MAIL_PASSWORD'] = 'Warlock23!'
+app.config['MAIL_PASSWORD'] = 'VirginiaPaper72!'
 app.config['MAIL_ASCII_ATTACHMENTS'] = True
 
 mail.init_app(app)

@@ -76,6 +76,11 @@ Animation_cards = []
 General_cards = [
 
     {
+        'img_NAME': 'twitter_header.png',
+        'DESC': 'A header image I made for my twitter account. It contains characters from a video game Ive been working on.'
+    },
+
+    {
         'img_NAME': 'witchy.png',
         'DESC': 'Witch character design for Instagram Drawlloween'
     },

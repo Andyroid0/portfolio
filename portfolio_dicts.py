@@ -81,6 +81,11 @@ General_cards = [
     },
 
     {
+        'img_NAME': 'hilooski_diner.png',
+        'DESC': 'A building design for a game project.'
+    },
+
+    {
         'img_NAME': 'witchy.png',
         'DESC': 'Witch character design for Instagram Drawlloween'
     },
